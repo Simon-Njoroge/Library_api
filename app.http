@@ -1,0 +1,39 @@
+GET http://localhost:8000/running
+
+###
+GET http://localhost:8000/
+
+###
+
+GET http://localhost:8000/api/book
+
+###
+
+GET http://localhost:8000/api/book/1
+
+
+###
+POST  http://localhost:8000/api/bookinsert
+Content-Type: application/json
+
+  {
+    "id": 25,
+    "Title": "The Goldfinch",
+    "Author": "Donna Tartt",
+    "Year": "2013"
+  }
+
+###
+PUT   http://localhost:8000/api/bookupdate/3
+Content-Type: application/json
+
+{
+  "id": 2,
+  "Title": "Think big",
+  "Author": "Ben Carson",
+  "Year": "2020"
+}
+
+###
+DELETE  http://localhost:8000/api/bookdelete/3
+Content-Type: application/json
